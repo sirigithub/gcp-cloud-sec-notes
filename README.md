@@ -19,4 +19,4 @@ high-level functions, such as admin account recovery
 
 ### Access scopes vs IAM roles
 * A more restrictive access scope will over ride a permissive IAM role
-* 
+* Default service account for compute will come up with scopes, custom sa for compute will come up with IAM roles. 
