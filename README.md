@@ -26,4 +26,6 @@ high-level functions, such as admin account recovery
 * Types of encryption
  * Encryption by default
  * Cloud key management service
- * Customer supplied encryption keys 
+ * Customer supplied encryption keys
+* When data is uploaded to storage it is broken into chunks and each chunk is encrypted using using a different key, if data is updated it is encrypted using a new key , so the old key is never updated.
+* 
