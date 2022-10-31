@@ -61,3 +61,38 @@ which is stored in the root KMS master key distributor
 * CSEKs are only available for compute engine and storage only.
 * 
 
+#### Cloud DLP
+Used to scan data for PII or sensitive data types
+select from built in data patterns for global or country specific types of sensitive data
+
+#### BigQuery :
+dataset , table or view level access control
+sub table access control
+
+#### cloud storage:
+bucket level or object level access control
+cloud iam or acl
+
+Tools used in combination for secure ci/cd deployments:
+* checked in code
+* cloud build
+* CSR vulnerability scanning 
+* Binary auth
+
+### Shielded VMs
+
+Shielded VMs are virtual machines (VMs) on Google Cloud hardened by a set of security controls that help defend against rootkits and bootkits. Using Shielded VMs helps protect enterprise workloads from threats like remote attacks, privilege escalation, and malicious insiders.
+
+Set an organization-level policy that requires all Compute Engine VMs to be configured as
+Shielded VMs. Use Measured Boot enabled with Virtual Trusted Platform Module (vTPM). Validate
+integrity events in Cloud Monitoring and place alerts on late boot validation events.
+
+Shielded VMs offer Virtual Trusted Platform Module (vTPM) which enables integrity
+monitoring. A vTPM generates hashes for the boot event and sandwiches all
+subsequent actions as updates to the hash. The final hash is used to validate against
+the hashes of every reboot. Any changes, updates, or misconfigurations at boot time
+can be captured at this stage.
+### Cloud Audit logs
+* provide complete cover of administrative activity
+* capture reads and writes to managed data store
+* export logs for long term storage
