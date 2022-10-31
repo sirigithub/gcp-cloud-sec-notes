@@ -106,3 +106,10 @@ image, ensure that the instance is stopped.
 * provide complete cover of administrative activity
 * capture reads and writes to managed data store
 * export logs for long term storage
+
+When you create a GKE cluster, Cloud Logging is enabled by default. Both Google
+Cloud and the Kubernetes ecosystem provide a range of tools for forensic
+investigations and audit. Cloud Logging, Docker-explorer, and Kubectl Sysdig Capture
+plus Sysdig Inspect provide forensic mechanisms. Use Docker-explorer for offline
+containers, and use Kubectl Sysdig Capture to trigger system events. Cloud Logging
+stores Firewall rules but not data access rules by default
