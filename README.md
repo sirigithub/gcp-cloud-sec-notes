@@ -92,6 +92,16 @@ monitoring. A vTPM generates hashes for the boot event and sandwiches all
 subsequent actions as updates to the hash. The final hash is used to validate against
 the hashes of every reboot. Any changes, updates, or misconfigurations at boot time
 can be captured at this stage.
+
+Compute Engine images provide reusability and ease of redeployment. Images can
+be built from a persistent disk or its snapshot or from an existing image. This existing
+image could be in a project or Cloud Storage. Shielded VMs leverage the image
+reusability only if firmware is UEFI-compliant, and you can enable secure boot in
+images.
+Shell scripts and Cloud Build can be used to automate the image creation process if
+the task is small and does not require a complete CI/CD pipeline. Before creating the
+image, ensure that the instance is stopped.
+
 ### Cloud Audit logs
 * provide complete cover of administrative activity
 * capture reads and writes to managed data store
