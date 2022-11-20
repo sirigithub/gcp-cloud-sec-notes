@@ -116,3 +116,4 @@ stores Firewall rules but not data access rules by default
 
 ### Custom IAM roles
 * custom roles can be applied at org or project level not at a folder level
+* Service accounts have keys associated with them. A sevice account can have upto 10 keys associated with it.
