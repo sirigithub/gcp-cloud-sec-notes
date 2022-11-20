@@ -113,3 +113,6 @@ investigations and audit. Cloud Logging, Docker-explorer, and Kubectl Sysdig Cap
 plus Sysdig Inspect provide forensic mechanisms. Use Docker-explorer for offline
 containers, and use Kubectl Sysdig Capture to trigger system events. Cloud Logging
 stores Firewall rules but not data access rules by default
+
+### Custom IAM roles
+* custom roles can be applied at org or project level not at a folder level
