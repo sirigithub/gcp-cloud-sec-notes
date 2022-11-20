@@ -120,5 +120,5 @@ stores Firewall rules but not data access rules by default
 
 ### Application default credentials
 * checks for presence of a google application credentials env variable
-* checks default service account
+* checks default service account ( default sa is associated with compute engine, kubernetes engine and cloudfunctions)
 * if 1 and 2 are not found, throws an error.
